@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet"> 
+<style>
+</style>
+</head>
+
+<div class="topnav" id="myTopnav">	
+  <img id=icon src="media/icon-2.png">
+  <a href="1.html">Home</a>
+  <a href="#contact" class="active" style= "color:white">Contact Us</a>
+  <a href="#about">Meet Our Team</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<section id="headcontact">
+  <p id="headtext2">Contact Us</p>
+  <p id="headtext2-1">(415) 426-4747</p>
+  <p id="headtext2-1">contact@bdiplaw.com</p>
+</section>
+
+<section id="contactsection">
+	<div id="map" style="width:300px;height:425px;float:left;margin-top:2%;margin-left:7.5%;">
+		"My map will go here"
+	</div>
+	<article id="contactarticle">
+		<h4>Redwood City</h4>
+		<p style="font-size: 12pt">At the Gateway of Silicon Valley</p>
+		<b id="bodyhead">Address:</b>
+		<p id="contactbody">701 El Camino Real<br>Redwood City, CA 94063</p>
+		<b id="bodyhead">Phone:</b>
+		<p id="contactbody">(650) 351-7248 (415) 426-4744</p>
+		<b id="bodyhead">Fax:</b>
+		<p id="contactbody">(415) 426-4744</p>
+		<hr id=contacthr>
+		<p id="contactbody">Parking: Public parking lot between Perry St. & Commercial Wy.</p>
+		<p id="contactbody">CalTrain: One block from Redwood City Station.</p>
+		<p id="contactbody">SamTrans: Nearest stops: ECR, FLXS, KX, 397, 398. One block from Redwood City Transit Center, served by additional lines.</p>
+	</article>
+	<article id="contactarticle-1"> 
+		<form>
+  		Your Name:<br>
+  		<input type="text" name="firstname" style="height:25px;width:290px;margin-top: 1%;"><br>
+  		Your Email:<br>
+  		<input type="text" name="lastname" style="height:25px;width:290px;margin-top: 1%;"><br>
+  		Subject:<br>
+  		<input type="text" name="firstname" style="height:25px;width:290px;margin-top: 1%;"><br>
+  		Your Message:<br>
+  		<input type="text" name="firstname" style="height:75px;width:290px;margin-top: 1%;"><br>
+  		<br>
+  		<input type="submit" value="Submit" style="height:50px;width:75px;background-color: darkgreen;color:white">
+  		<p id="disclaimer">Notice: Sending us an email or submitting this form does not create an attorney-client relationship. Please do not send us any privileged or confidential information. See our Privacy Policy for additional information.</p>
+		</form> 
+	</article>
+</section>
+
+<article id="buffer"></article>
+
+<!-- footer -->
+
+<footer>
+	<img src="media/icon-1.png" id="footicon">
+	<p id="footertext1">Attorneys. Technologists. Trusted Advisers. Litigators. Problem Solvers. Partners.</p>
+	<article id="footerpart">
+	<h3>Our Firm</h3>
+	<br>
+	<a href="#">Our Attorneys</a>
+	</article>
+	<article id="footerpart1">
+	<h3>Need Help</h3>
+	<br>
+	<a href="#">Contact Us</a>
+	</article>
+	<p id="footertext3">&copy; 2017-2018 Bunsow De Mory LLP</p>
+</footer>
+
+
+
+
+<!-- Javascript -->
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+<script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(37.487232, -122.235631),
+        zoom: 15,
+        mapTypeIds: ['roadmap', 'terrain']
+
+
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+} 
+</script>
+ <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> 
+
+</body>
+</html>
